@@ -19,7 +19,7 @@
                 <span v-bind:class="{isdone: item.done}">{{ item.text }}</span>
                 <button type="button" v-on:click="unfinish(item)" v-if="item.done">未完成</button>
                 <button type="button" v-on:click="finish(item)" v-else>已完成</button>
-                <button type="button" v-on:click="del">删除</button>
+                <button type="button" v-on:click="del(item)">删除</button>
             </li>
         </ul>
         <p v-else>
